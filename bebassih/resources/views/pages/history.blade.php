@@ -25,7 +25,7 @@
         <tbody>
                 @foreach($transactionDetail as $trd)
                     @foreach($trd as $trds)
-                        @if($trds->TransactionID == $currTRID)
+                        @if($trds->TransactionID == $tr->TransactionID)
                         <tr>
                             <td class="border border-black p-2">{{ ++$count }}</td>
                             <td class="border border-black p-2">{{ $trds->ProductName}}</td>

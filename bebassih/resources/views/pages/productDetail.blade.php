@@ -25,7 +25,7 @@
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="rounded-lg bg-orange-300 hover:bg-orange-900 hover:text-white font-semibold py-2 px-4 hover:shadow-lg  ">
-                           Delete
+                            Delete
                         </button>
                     </form>
 

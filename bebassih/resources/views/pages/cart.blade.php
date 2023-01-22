@@ -31,7 +31,7 @@
                     <td class="border border-black p-2">{{ $cart->Quantity }} pc(s)</td>
                     <td class="border border-black p-2">{{ number_format($cart->ProductPrice) }}</td>
                     <td class="flex space-x-4 p-2">
-                        <a href="{{ route('editproduct', $cart->ProductID) }}" class="action btn btn-info w-75">Edit Product Qty</a>
+                        <a href="{{ route('productdetail', $cart->ProductID) }}" class="action btn btn-info w-75">Edit Product Qty</a>
                         <form action="{{ route('removeitem',$cart->ProductID) }}" method="POST" class="w-100 text-center">
                             @csrf
                             @method('DELETE')
